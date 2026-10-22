@@ -55,9 +55,9 @@ const {order,
               
               />
               
-              <TipPercentageForm
+              <TipPercentageForm 
+              tip={tip} setTip={setTip}
               
-
               />
 
               <OrderTotal

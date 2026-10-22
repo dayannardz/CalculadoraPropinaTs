@@ -9,10 +9,11 @@ type MenuItemProps = {
 
 export default function MenuItem({item,addItem}: MenuItemProps) {
   return (
-<button onClick={()=>addItem(item)} className="flex justify-between items-center w-full">
+<button onClick={()=>addItem(item)} 
+className="border-2 border-teal-400 hover:bg-teal-200 
+p-3 text-lg rounded-lg flex justify-between w-full">
     <p>{item.name}</p>
-    <p>${item.price}</p>
-    
+    <p className='font-black'>${item.price}</p>
 </button>
 
   );
